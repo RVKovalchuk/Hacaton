@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".GreetingActivity">
+
+    <ImageView
+        android:id="@+id/greeting_activity_logo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/greeting_activity_image_logo_height"
+        android:layout_marginTop="@dimen/greeting_activity_image_logo_margin_top"
+        android:contentDescription="@string/greeting_activity_description_image_logo"
+        android:src="@drawable/greeting_activity_image_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/greeting_activity_image_tourist_margin_top"
+        android:layout_marginBottom="@dimen/greeting_activity_image_tourist_margin_bottom"
+        android:contentDescription="@string/greeting_activity_description_image_tourist"
+        android:src="@drawable/greeting_activity_image_tourist"
+        app:layout_constraintBottom_toTopOf="@id/greeting_activity_text_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/greeting_activity_logo" />
+
+    <TextView
+        android:id="@+id/greeting_activity_text_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/greeting_activity_text_view_first_margin_bottom"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/greeting_activity_text_view_line_spacing"
+        android:text="@string/greeting_activity_text_view_first"
+        android:textColor="@color/white"
+        android:textSize="@dimen/greeting_activity_text_view_first_text_size"
+        app:layout_constraintBottom_toTopOf="@id/greeting_activity_text_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/greeting_activity_text_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/greeting_activity_text_view_second_margin_bottom"
+        android:text="@string/greeting_activity_text_view_second"
+        android:textColor="@color/white"
+        android:textSize="@dimen/greeting_activity_text_view_second_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/greeting_activity_text_third"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/greeting_activity_text_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/greeting_activity_text_view_third_margin_bottom"
+        android:text="@string/greeting_activity_text_view_third"
+        android:textColor="@color/white"
+        android:textSize="@dimen/greeting_activity_text_view_third_text_size"
+        app:layout_constraintBottom_toTopOf="@id/greeting_activity_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/greeting_activity_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/greeting_activity_button_margin_start"
+        android:layout_marginEnd="@dimen/greeting_activity_button_margin_end"
+        android:layout_marginBottom="@dimen/greeting_activity_button_margin_bottom"
+        android:background="@drawable/shape_greeting_activity_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/greeting_activity_button"
+        android:textColor="@color/black"
+        android:textSize="@dimen/greeting_activity_button_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="greeting_activity_image_logo_height">150dp</dimen>
+    <dimen name="greeting_activity_image_logo_margin_top">30dp</dimen>
+
+    <dimen name="greeting_activity_image_tourist_margin_top">20dp</dimen>
+    <dimen name="greeting_activity_image_tourist_margin_bottom">20dp</dimen>
+
+    <dimen name="greeting_activity_text_view_first_margin_bottom">10dp</dimen>
+    <dimen name="greeting_activity_text_view_first_text_size">20sp</dimen>
+    <dimen name="greeting_activity_text_view_line_spacing">10dp</dimen>
+
+    <dimen name="greeting_activity_text_view_second_margin_bottom">30dp</dimen>
+    <dimen name="greeting_activity_text_view_second_text_size">28sp</dimen>
+
+    <dimen name="greeting_activity_text_view_third_margin_bottom">60dp</dimen>
+    <dimen name="greeting_activity_text_view_third_text_size">18sp</dimen>
+
+    <dimen name="greeting_activity_button_margin_start">40dp</dimen>
+    <dimen name="greeting_activity_button_margin_end">40dp</dimen>
+    <dimen name="greeting_activity_button_margin_bottom">60dp</dimen>
+    <dimen name="greeting_activity_button_text_size">18sp</dimen>
+
+    <dimen name="registration_activity_text_first_margin_top">18dp</dimen>
+    <dimen name="registration_activity_text_first_text_size">20sp</dimen>
+
+    <dimen name="registration_activity_view_line_height">1dp</dimen>
+    <dimen name="registration_activity_view_line_margin_top">10dp</dimen>
+
+    <dimen name="registration_activity_text_second_margin_top">10dp</dimen>
+    <dimen name="registration_activity_text_second_text_size">24sp</dimen>
+
+    <dimen name="registration_activity_text_third_margin_top">5dp</dimen>
+    <dimen name="registration_activity_text_third_margin_start">30dp</dimen>
+    <dimen name="registration_activity_text_third_margin_end">30dp</dimen>
+    <dimen name="registration_activity_text_third_text_size">16sp</dimen>
+
+    <dimen name="registration_activity_edit_text_surname_margin_start">30dp</dimen>
+    <dimen name="registration_activity_edit_text_surname_margin_end">30dp</dimen>
+    <dimen name="registration_activity_edit_text_surname_margin_top">10dp</dimen>
+    <dimen name="registration_activity_edit_text_surname_padding_start">5dp</dimen>
+    <dimen name="registration_activity_edit_text_surname_padding_end">5dp</dimen>
+    <dimen name="registration_activity_edit_text_surname_padding_top">5dp</dimen>
+    <dimen name="registration_activity_edit_text_surname_padding_bottom">5dp</dimen>
+    <dimen name="registration_activity_edit_text_surname_text_size">18sp</dimen>
+
+    <dimen name="registration_activity_text_surname_margin_start">30dp</dimen>
+    <dimen name="registration_activity_text_surname_margin_end">30dp</dimen>
+    <dimen name="registration_activity_text_surname_margin_top">5dp</dimen>
+    <dimen name="registration_activity_text_surname_text_size">12sp</dimen>
+
+    <dimen name="registration_activity_edit_text_name_margin_start">30dp</dimen>
+    <dimen name="registration_activity_edit_text_name_margin_end">30dp</dimen>
+    <dimen name="registration_activity_edit_text_name_margin_top">5dp</dimen>
+    <dimen name="registration_activity_edit_text_name_padding_start">5dp</dimen>
+    <dimen name="registration_activity_edit_text_name_padding_end">5dp</dimen>
+    <dimen name="registration_activity_edit_text_name_padding_top">5dp</dimen>
+    <dimen name="registration_activity_edit_text_name_padding_bottom">5dp</dimen>
+    <dimen name="registration_activity_edit_text_name_text_size">18sp</dimen>
+
+    <dimen name="registration_activity_text_name_margin_start">30dp</dimen>
+    <dimen name="registration_activity_text_name_margin_end">30dp</dimen>
+    <dimen name="registration_activity_text_name_margin_top">5dp</dimen>
+    <dimen name="registration_activity_text_name_text_size">12sp</dimen>
+
+    <dimen name="registration_activity_edit_text_patronymic_margin_start">30dp</dimen>
+    <dimen name="registration_activity_edit_text_patronymic_margin_end">30dp</dimen>
+    <dimen name="registration_activity_edit_text_patronymic_margin_top">5dp</dimen>
+    <dimen name="registration_activity_edit_text_patronymic_padding_start">5dp</dimen>
+    <dimen name="registration_activity_edit_text_patronymic_padding_end">5dp</dimen>
+    <dimen name="registration_activity_edit_text_patronymic_padding_top">5dp</dimen>
+    <dimen name="registration_activity_edit_text_patronymic_padding_bottom">5dp</dimen>
+    <dimen name="registration_activity_edit_text_patronymic_text_size">18sp</dimen>
+
+    <dimen name="registration_activity_text_patronymic_margin_start">30dp</dimen>
+    <dimen name="registration_activity_text_patronymic_margin_end">30dp</dimen>
+    <dimen name="registration_activity_text_patronymic_margin_top">5dp</dimen>
+    <dimen name="registration_activity_text_patronymic_text_size">12sp</dimen>
+
+    <dimen name="registration_activity_edit_text_email_margin_start">30dp</dimen>
+    <dimen name="registration_activity_edit_text_email_margin_end">30dp</dimen>
+    <dimen name="registration_activity_edit_text_email_margin_top">5dp</dimen>
+    <dimen name="registration_activity_edit_text_email_padding_start">5dp</dimen>
+    <dimen name="registration_activity_edit_text_email_padding_end">5dp</dimen>
+    <dimen name="registration_activity_edit_text_email_padding_top">5dp</dimen>
+    <dimen name="registration_activity_edit_text_email_padding_bottom">5dp</dimen>
+    <dimen name="registration_activity_edit_text_email_text_size">18sp</dimen>
+
+    <dimen name="registration_activity_text_email_margin_start">30dp</dimen>
+    <dimen name="registration_activity_text_email_margin_end">30dp</dimen>
+    <dimen name="registration_activity_text_email_margin_top">5dp</dimen>
+    <dimen name="registration_activity_text_email_text_size">12sp</dimen>
+
+    <dimen name="registration_activity_edit_text_number_margin_start">30dp</dimen>
+    <dimen name="registration_activity_edit_text_number_margin_end">30dp</dimen>
+    <dimen name="registration_activity_edit_text_number_margin_top">5dp</dimen>
+    <dimen name="registration_activity_edit_text_number_padding_start">5dp</dimen>
+    <dimen name="registration_activity_edit_text_number_padding_end">5dp</dimen>
+    <dimen name="registration_activity_edit_text_number_padding_top">5dp</dimen>
+    <dimen name="registration_activity_edit_text_number_padding_bottom">5dp</dimen>
+    <dimen name="registration_activity_edit_text_number_text_size">18sp</dimen>
+
+    <dimen name="registration_activity_text_number_margin_start">30dp</dimen>
+    <dimen name="registration_activity_text_number_margin_end">30dp</dimen>
+    <dimen name="registration_activity_text_number_margin_top">5dp</dimen>
+    <dimen name="registration_activity_text_number_text_size">12sp</dimen>
+
+    <dimen name="registration_activity_edit_text_social_network_margin_start">30dp</dimen>
+    <dimen name="registration_activity_edit_text_social_network_margin_end">30dp</dimen>
+    <dimen name="registration_activity_edit_text_social_network_margin_top">5dp</dimen>
+    <dimen name="registration_activity_edit_text_social_network_padding_start">5dp</dimen>
+    <dimen name="registration_activity_edit_text_social_network_padding_end">5dp</dimen>
+    <dimen name="registration_activity_edit_text_social_network_padding_top">5dp</dimen>
+    <dimen name="registration_activity_edit_text_social_network_padding_bottom">5dp</dimen>
+    <dimen name="registration_activity_edit_text_social_network_text_size">18sp</dimen>
+
+    <dimen name="registration_activity_text_social_network_margin_start">30dp</dimen>
+    <dimen name="registration_activity_text_social_network_margin_end">30dp</dimen>
+    <dimen name="registration_activity_text_social_network_margin_top">5dp</dimen>
+    <dimen name="registration_activity_text_social_network_text_size">12sp</dimen>
+
+    <dimen name="registration_activity_button_margin_start">40dp</dimen>
+    <dimen name="registration_activity_button_margin_top">5dp</dimen>
+    <dimen name="registration_activity_button_margin_end">40dp</dimen>
+    <dimen name="registration_activity_button_text_size">18sp</dimen>
+
+    <dimen name="registration_activity_text_consent_text_size">12sp</dimen>
+
+</resources>

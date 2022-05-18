@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="greeting_activity_logo">#ПОХОДЫ #СВОБОДА</string>
+    <string name="greeting_activity_button">ВОЙТИ</string>
+    <string name="greeting_activity_text_view_first">#ПОХОДЫ #СВОБОДА</string>
+    <string name="greeting_activity_text_view_second">#ПРЕОДОЛЕНИЯ #ОТКРЫТИЯ</string>
+    <string name="greeting_activity_text_view_forth">Наполняем каталог перевалов вместе</string>
+    <string name="greeting_activity_text_view_third">ОПИШИ ПЕРЕВАЛ</string>
+    <string name="greeting_activity_description_image_logo">Logo of FSTR</string>
+    <string name="greeting_activity_description_image_tourist">Image of a tourist</string>
+    <string name="registration_activity_text_second">Давайте знакомиться</string>
+    <string name="registration_activity_text_surname">Фамилия</string>
+    <string name="registration_activity_text_name">Имя</string>
+    <string name="registration_activity_text_patronymic">Отчество</string>
+    <string name="registration_activity_edit_text_email">yourname@mail.ru</string>
+    <string name="registration_activity_text_email">E-mail будет логином и основным средством связи с вами</string>
+    <string name="registration_activity_edit_text_number">+7_</string>
+    <string name="registration_activity_text_number">По желанию</string>
+    <string name="registration_activity_edit_text_social_network">ссылка на соцсети</string>
+    <string name="registration_activity_text_social_network">По желанию</string>
+    <string name="registration_activity_button">Войти</string>
+    <string name="registration_activity_text_consent">Используя приложение, вы даёте согласие ФСТР\n на обработку персональных данных</string>
+</resources>
