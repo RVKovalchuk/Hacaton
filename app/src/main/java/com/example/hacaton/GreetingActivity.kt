@@ -1,12 +1,17 @@
 package com.example.hacaton
 
 import android.app.ActivityOptions
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 
 class GreetingActivity : AppCompatActivity() {
+    private lateinit var preferences: SharedPreferences
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_greeting)
@@ -16,19 +21,23 @@ class GreetingActivity : AppCompatActivity() {
 
     private fun clickOnButton() {
         val buttonEnter = findViewById<Button>(R.id.greeting_activity_button)
-        if (IS_AVEILABLE_TO_OPEN == "isn't_can") {
-            buttonEnter.setOnClickListener {
+        preferences = getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE)
+
+        buttonEnter.setOnClickListener {
+            if (preferences.getString(PREFERENCES_KEY, "PREFERENCES_KEY") == "PREFERENCES_KEY" ) {
                 val optionsTransition = ActivityOptions.makeSceneTransitionAnimation(this)
                 startActivity(
                     Intent(this, RegistrationActivity::class.java),
                     optionsTransition.toBundle()
                 )
-            }
-        } else {
-            buttonEnter.setOnClickListener {
+            } else {
                 val optionsTransition = ActivityOptions.makeSceneTransitionAnimation(this)
-                startActivity(Intent(this, BaseActivity::class.java), optionsTransition.toBundle())
+                startActivity(
+                    Intent(this, BaseActivity::class.java),
+                    optionsTransition.toBundle()
+                )
             }
+
         }
     }
 }

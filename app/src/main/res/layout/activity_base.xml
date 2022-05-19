@@ -14,6 +14,7 @@
         android:ellipsize="end"
         android:gravity="center"
         android:maxLines="2"
+        android:text="username"
         android:textColor="@color/black"
         android:textSize="@dimen/registration_activity_text_first_text_size"
         android:paddingTop="5dp"
@@ -31,6 +32,7 @@
         app:layout_constraintGuide_end="50dp" />
 
     <Button
+        android:id="@+id/base_activity_button_exit"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_exit"
