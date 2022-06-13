@@ -1,5 +1,6 @@
 package com.example.hacaton
 
+import android.app.ActivityOptions
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
@@ -9,6 +10,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import com.example.hacaton.userDataBase.UserDataBaseManager
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class BaseActivity : AppCompatActivity() {
     private val databaseManager = UserDataBaseManager(this)
@@ -17,10 +19,17 @@ class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_base)
+        databaseManager.openUserDB()
 
         onClickTextWatchAll()
         fillUsernameTextView()
         onClickButtonExit()
+        onClickFabAddNew()
+    }
+
+    override fun onDestroy() {
+        databaseManager.closeUserDB()
+        super.onDestroy()
     }
 
     private fun fillUsernameTextView() {
@@ -29,9 +38,7 @@ class BaseActivity : AppCompatActivity() {
         preferences = getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE)
         val email = preferences.getString(PREFERENCES_KEY, "").toString()
 
-        databaseManager.openUserDB()
         userNameTextView.text = databaseManager.findUsernameFromDB(email)
-        databaseManager.closeUserDB()
     }
 
     private fun onClickTextWatchAll() {
@@ -52,6 +59,14 @@ class BaseActivity : AppCompatActivity() {
                 .putString(PREFERENCES_KEY, "PREFERENCES_KEY")
                 .apply()
             finish()
+        }
+    }
+
+    private fun onClickFabAddNew(){
+        val fabAddNew = findViewById<FloatingActionButton>(R.id.base_activity_fab_add)
+        fabAddNew.setOnClickListener {
+            val optionsActivity = ActivityOptions.makeSceneTransitionAnimation(this)
+            startActivity(Intent(this, AddActivity::class.java), optionsActivity.toBundle())
         }
     }
 }

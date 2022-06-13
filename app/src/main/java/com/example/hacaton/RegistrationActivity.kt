@@ -1,6 +1,5 @@
 package com.example.hacaton
 
-import android.app.ActivityOptions
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
@@ -11,10 +10,10 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.content.res.AppCompatResources
 import com.example.hacaton.userDataBase.UserDataBaseManager
 
-const val PREFERENCES_NAME = "PREFERENCES_NAME"
-const val PREFERENCES_KEY = "PREFERENCES_KEY"
+
 
 class RegistrationActivity : AppCompatActivity() {
     private val databaseManager = UserDataBaseManager(this)
@@ -24,6 +23,7 @@ class RegistrationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrarion)
 
+        databaseManager.openUserDB()
         onClickTextConsent()
         addUserToDatabase()
     }
@@ -46,9 +46,7 @@ class RegistrationActivity : AppCompatActivity() {
                 && email.text.isNotBlank()
             ) {
                 val emailText = email.text.toString()
-                val optionsActivity = ActivityOptions.makeSceneTransitionAnimation(this)
 
-                databaseManager.openUserDB()
                 databaseManager.insertToUserDB(
                     surname.text.toString(), name.text.toString(), patronymic.text.toString(),
                     emailText, number.text.toString(), socialNetwork.text.toString()
@@ -60,9 +58,9 @@ class RegistrationActivity : AppCompatActivity() {
                     .apply()
 
                 startActivity(
-                    Intent(this, BaseActivity::class.java),
-                    optionsActivity.toBundle()
+                    Intent(this, BaseActivity::class.java)
                 )
+                finish()
             } else {
                 Toast.makeText(this, "Заполните все обязательные поля", Toast.LENGTH_LONG).show()
             }
@@ -78,6 +76,15 @@ class RegistrationActivity : AppCompatActivity() {
 
             intent.data = Uri.parse("https://google.com")
             startActivity(intent)
+        }
+    }
+
+    private fun isAddableToDB(surname : EditText, name : EditText, patronymic : EditText, email : EditText, buttonEnter : Button) {
+        if (surname.text.isNotBlank() && name.text.isNotBlank() && patronymic.text.isNotBlank()
+            && email.text.isNotBlank()) {
+           buttonEnter.background =  AppCompatResources.getDrawable(this, R.drawable.shape_registration_activity_button)
+        } else {
+            buttonEnter.background =  AppCompatResources.getDrawable(this, R.drawable.shape_registration_activity_button_deactivated)
         }
     }
 }

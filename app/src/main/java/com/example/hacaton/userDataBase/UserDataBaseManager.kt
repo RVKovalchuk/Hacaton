@@ -36,7 +36,7 @@ class UserDataBaseManager(context: Context) {
     }
 
     fun findUsernameFromDB(email: String): String {
-        var text  = ""
+        var text = ""
         val columns = arrayOf(UserDataBaseClass.COLUMN_NAME, UserDataBaseClass.COLUMN_SURNAME)
         val selection = "${UserDataBaseClass.COLUMN_EMAIL} = ?"
         val selectionArgs = arrayOf(email)
@@ -46,10 +46,12 @@ class UserDataBaseManager(context: Context) {
             null, null, null
         )
         cursor.use {
-            cursor?.moveToFirst()
+            if (cursor?.count != 0) {
+                cursor?.moveToFirst()
                 text +=
-                   " ${cursor?.getString(cursor.getColumnIndexOrThrow(UserDataBaseClass.COLUMN_NAME))} \n" +
-                           "${cursor?.getString(cursor.getColumnIndexOrThrow(UserDataBaseClass.COLUMN_SURNAME))}"
+                    " ${cursor?.getString(cursor.getColumnIndexOrThrow(UserDataBaseClass.COLUMN_NAME))} \n" +
+                            "${cursor?.getString(cursor.getColumnIndexOrThrow(UserDataBaseClass.COLUMN_SURNAME))}"
+            }
         }
         return text
     }

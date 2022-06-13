@@ -11,7 +11,7 @@ object UserDataBaseClass : BaseColumns {
     const val COLUMN_NUMBER = "number"
     const val COLUMN_SOCIAL_NETWORK = "social_networks"
 
-    const val DATABASE_VERSION = 6
+    const val DATABASE_VERSION = 1
     const val DATABASE_NAME = "UsersDB.db"
 
     const val CREATION_OF_THE_TABLE = "CREATE TABLE IF NOT EXISTS $TABLE_NAME (" +
@@ -19,7 +19,7 @@ object UserDataBaseClass : BaseColumns {
             "$COLUMN_SURNAME TEXT, " +
             "$COLUMN_NAME TEXT, " +
             "$COLUMN_PATRONYMIC TEXT, " +
-            "$COLUMN_EMAIL TEXT, " +
+            "$COLUMN_EMAIL TEXT UNIQUE COLLATE NOCASE, " +
             "$COLUMN_NUMBER TEXT, " +
             "$COLUMN_SOCIAL_NETWORK TEXT)"
 

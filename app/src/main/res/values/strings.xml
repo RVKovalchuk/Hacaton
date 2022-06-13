@@ -27,5 +27,7 @@
     <string name="bottom_navigation_bar_button_search">search</string>
 
     <string name="base_activity_text_watch_all"><a href="https://tssr.ru/main/structura/2720/">Посмотреть базу перевалов</a></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

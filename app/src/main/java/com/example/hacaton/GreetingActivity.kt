@@ -4,10 +4,12 @@ import android.app.ActivityOptions
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+
+const val PREFERENCES_NAME = "PREFERENCES_NAME"
+const val PREFERENCES_KEY = "PREFERENCES_KEY"
 
 class GreetingActivity : AppCompatActivity() {
     private lateinit var preferences: SharedPreferences
